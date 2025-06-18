@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đang chuyển hướng...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    let seconds = 10;
+    function countdown() {
+      document.getElementById("count").innerText = seconds;
+      if (seconds <= 0) {
+        window.location.href = "https://drive.google.com/drive/folders/1Rftjik0ELCZB8blvlyRChM9g9K28U3wj";
+      } else {
+        seconds--;
+        setTimeout(countdown, 1000);
+      }
+    }
+    window.onload = countdown;
+  </script>
+</head>
+<body style="font-family: sans-serif; text-align: center; background-color: #f2f2f2; padding-top: 50px;">
+  <img src="logo.jpg" alt="Logo" style="width:150px; border-radius: 50%; box-shadow: 0 0 10px #aaa;"><br><br>
+  <h2>Đang chuyển hướng...</h2>
+  <p>Bạn sẽ được chuyển sau <span id="count">10</span> giây.</p>
+  <p>Nếu không, bấm <a href="https://drive.google.com/drive/folders/1Rftjik0ELCZB8blvlyRChM9g9K28U3wj">vào đây</a>.</p>
+</body>
+</html>
